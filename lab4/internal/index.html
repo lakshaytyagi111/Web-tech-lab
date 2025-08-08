@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+</head>
+<body style="background-color: #CCFF66; font-family: Verdana, Arial, sans-serif;">
+
+  <form style="width: 400px; margin: 30px auto; padding: 25px 30px 10px 30px; background: #CCFF66;">
+    <h2 style="text-align:center; color: red; margin-bottom: 20px; margin-top: 0;">Personal Details</h2>
+    
+    <div style="margin-bottom: 10px;">
+      <label for="name" style="display:inline-block; width: 100px; font-weight: bold;">Name:</label>
+      <input type="text" id="name" name="name" style="width: 200px;" />
+    </div>
+    
+    <div style="margin-bottom: 10px;">
+      <label for="password" style="display:inline-block; width: 100px; font-weight: bold;">Password:</label>
+      <input type="password" id="password" name="password" style="width: 200px;" />
+    </div>
+    
+    <div style="margin-bottom: 10px;">
+      <label for="email" style="display:inline-block; width: 100px; font-weight: bold;">E-mail id:</label>
+      <input type="email" id="email" name="email" style="width: 200px;" />
+    </div>
+    
+    <div style="margin-bottom: 10px;">
+      <label style="display:inline-block; width: 100px; font-weight: bold;">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" style="margin-left:10px;" />
+      <label for="male" style="margin-right:15px;">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+      <label for="contact" style="display:inline-block; width: 100px; font-weight: bold;">Contact#:</label>
+      <input type="text" id="contact" name="contact" style="width: 200px;" />
+    </div>
+
+    <h2 style="text-align:center; color: red; margin-bottom: 15px; margin-top: 0;">Educational Qualification</h2>
+
+    <div style="margin-bottom: 10px;">
+      <label for="degree" style="display:inline-block; width: 100px; font-weight: bold;">Degree:</label>
+      <select id="degree" name="degree" style="width: 150px;">
+        <option>-- Select Group --</option>
+        <option>BSc</option>
+        <option>BCom</option>
+        <option>BA</option>
+      </select>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label for="engineering" style="display:inline-block; width: 100px; font-weight: bold;">Engineering:</label>
+      <select id="engineering" name="engineering" style="width: 150px;">
+        <option>-- Select Group --</option>
+        <option>Computer Science</option>
+        <option>Mechanical</option>
+        <option>Civil</option>
+      </select>
+    </div>
+    <div style="margin-bottom: 15px;">
+      <label style="display:inline-block; width: 100px; font-weight: bold;">Hobbies:</label>
+      <input type="checkbox" id="chess" name="hobbies" value="chess" style="margin-left:10px;" />
+      <label for="chess" style="margin-right:15px;">Playing chess</label>
+      <input type="checkbox" id="reading" name="hobbies" value="reading" />
+      <label for="reading">Reading Books</label>
+    </div>
+
+    <h2 style="text-align:center; color: red; margin-bottom: 10px; margin-top: 0;">Address</h2>
+    <div style="text-align:center; margin-bottom: 10px;">
+      <textarea name="address" rows="4" cols="40" style="resize:none; width:90%;"></textarea>
+    </div>
+
+    <div style="text-align:left; margin-bottom: 15px;">
+      <label style="font-weight: bold;" for="resume">Attch Resume:</label>
+      <input type="file" id="resume" name="resume" style="margin-left:10px;">
+    </div>
+
+    <div style="text-align:center;">
+      <button type="submit"
+              style="background: orange;
+                     color: white; font-size: 18px; font-weight: bold;
+                     padding:10px 30px; border: none; border-radius: 8px;
+                     cursor:pointer; box-shadow:0 2px 3px #aaa;">
+        SUBMIT
+      </button>
+    </div>
+    
+  </form>
+</body>
+</html>
